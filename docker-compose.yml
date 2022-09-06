@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mymongo:
+    image: mongo:5.0.11
+  mynode:
+    build: .
+    ports: 
+      - '8000:8000'
